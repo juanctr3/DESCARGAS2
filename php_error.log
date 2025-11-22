@@ -1,0 +1,471 @@
+[20-Oct-2025 03:54:15 UTC] Error General en verify-otp.php: Faltan datos para la verificación. - Datos recibidos: {"otp_plugin_id":"3","otp_plugin_slug":"plugin-whatsapp-wordpress-woowapp","otp_code":"391205","user_name":"dfasfasdf","email":"sadfasf@fsadf.com","opt_in":"1"}
+[20-Oct-2025 03:54:16 UTC] Error General en verify-otp.php: Faltan datos para la verificación. - Datos recibidos: {"otp_plugin_id":"3","otp_plugin_slug":"plugin-whatsapp-wordpress-woowapp","otp_code":"391205","user_name":"dfasfasdf","email":"sadfasf@fsadf.com","opt_in":"1"}
+[20-Oct-2025 04:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 04:37:57 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 04:38:15 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 05:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 06:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 07:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 08:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 09:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 10:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 11:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 12:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 13:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 14:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 15:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 16:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 17:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 18:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 19:00:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 20:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 21:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 22:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[20-Oct-2025 23:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[21-Oct-2025 00:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[21-Oct-2025 00:26:45 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 104
+[21-Oct-2025 00:26:45 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 104
+[21-Oct-2025 00:26:46 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 104
+[21-Oct-2025 00:26:46 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 104
+[21-Oct-2025 00:27:09 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 104
+[21-Oct-2025 00:27:09 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 104
+[21-Oct-2025 00:27:26 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 104
+[21-Oct-2025 00:27:26 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 104
+[21-Oct-2025 00:27:36 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 104
+[21-Oct-2025 00:27:36 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 104
+[21-Oct-2025 00:28:01 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 104
+[21-Oct-2025 00:28:01 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 104
+[21-Oct-2025 00:49:27 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 80
+[21-Oct-2025 00:49:27 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 80
+[21-Oct-2025 00:49:28 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 80
+[21-Oct-2025 00:49:28 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 80
+[21-Oct-2025 00:50:16 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 80
+[21-Oct-2025 00:50:16 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 80
+[21-Oct-2025 01:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[21-Oct-2025 01:04:47 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:04:47 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:04:48 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:04:48 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:05:06 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:05:06 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:19:53 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:19:53 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:19:54 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:19:54 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:20:28 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:20:28 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:20:35 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:20:35 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:20:41 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:20:41 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:20:49 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:20:49 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:20:58 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:20:58 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:21:06 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:21:06 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:25:46 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:25:46 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:25:46 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:25:46 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:26:13 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:26:13 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:34:30 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:34:30 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:34:31 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:34:31 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:34:51 UTC] PHP Warning:  Undefined array key "last_updated" in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 01:34:51 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/descargas/public_html/api/update.php on line 81
+[21-Oct-2025 02:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[21-Oct-2025 03:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[21-Oct-2025 04:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[21-Oct-2025 05:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[21-Oct-2025 06:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[24-Oct-2025 20:16:27 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/api/update.php(5): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[24-Oct-2025 20:16:36 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/api/update.php(5): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[24-Oct-2025 20:16:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/api/update.php(5): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[26-Oct-2025 03:19:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 03:20:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 04:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 05:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 06:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 07:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 08:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 09:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 10:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 11:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 12:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 13:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 14:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 15:00:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 16:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 17:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 18:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 19:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 20:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 21:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 22:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[26-Oct-2025 23:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[27-Oct-2025 00:00:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[27-Oct-2025 01:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[27-Oct-2025 02:00:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[27-Oct-2025 03:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[27-Oct-2025 04:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[27-Oct-2025 05:00:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'd.review_reminder_sent' in 'WHERE' in /home/descargas/public_html/cron/send_review_reminders.php:45
+Stack trace:
+#0 /home/descargas/public_html/cron/send_review_reminders.php(45): mysqli->prepare()
+#1 {main}
+  thrown in /home/descargas/public_html/cron/send_review_reminders.php on line 45
+[31-Oct-2025 19:21:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/login.php(2): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[31-Oct-2025 19:21:56 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/login.php(2): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[31-Oct-2025 19:21:57 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/login.php(2): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[31-Oct-2025 19:21:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/login.php(2): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[03-Nov-2025 02:33:51 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/index.php(3): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[03-Nov-2025 02:35:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/index.php(3): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[03-Nov-2025 02:36:57 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/index.php(3): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[17-Nov-2025 07:42:19 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/plugin.php(2): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[17-Nov-2025 08:15:16 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/api/update.php(5): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[17-Nov-2025 08:15:24 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/api/update.php(5): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[17-Nov-2025 08:15:25 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/api/update.php(5): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[17-Nov-2025 08:42:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/api/update.php(5): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[17-Nov-2025 10:13:24 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/sitemap.php(3): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[20-Nov-2025 08:25:41 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/api/update.php(5): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[20-Nov-2025 08:25:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/api/update.php(5): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[20-Nov-2025 08:25:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/api/update.php(5): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[20-Nov-2025 23:51:51 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/reviews.php(4): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[21-Nov-2025 00:06:07 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /home/descargas/public_html/includes/config.php:27
+Stack trace:
+#0 /home/descargas/public_html/includes/config.php(27): mysqli->__construct()
+#1 /home/descargas/public_html/reviews.php(4): require_once('...')
+#2 {main}
+  thrown in /home/descargas/public_html/includes/config.php on line 27
+[21-Nov-2025 20:15:33 UTC] Error de Base de Datos en verify-otp.php: Duplicate entry 'pagosgreencolombia@gmail.com' for key 'email' - Datos recibidos: {"otp_plugin_id":"3","otp_plugin_slug":"plugin-whatsapp-wordpress-woowapp","otp_code":"980474","user_name":"Juli\u00e1n \u00c1vila","email":"pagosgreencolombia@gmail.com","opt_in":"1"}
+[21-Nov-2025 20:15:38 UTC] Error General en verify-otp.php: Faltan datos para la verificación. - Datos recibidos: {"otp_plugin_id":"3","otp_plugin_slug":"plugin-whatsapp-wordpress-woowapp","otp_code":"980474","user_name":"Juli\u00e1n \u00c1vila","email":"pagosgreencolombia@gmail.com","opt_in":"1"}
+[21-Nov-2025 20:16:00 UTC] Error General en verify-otp.php: Faltan datos para la verificación. - Datos recibidos: {"otp_plugin_id":"3","otp_plugin_slug":"plugin-whatsapp-wordpress-woowapp","otp_code":"980474","user_name":"andres avila","email":"pagosgreencolombia@gmail.com","opt_in":"1"}
+[21-Nov-2025 20:17:14 UTC] Error de Base de Datos en verify-otp.php: Duplicate entry 'pagosgreencolombia@gmail.com' for key 'email' - Datos recibidos: {"otp_plugin_id":"3","otp_plugin_slug":"plugin-whatsapp-wordpress-woowapp","otp_code":"368523","user_name":"Andres","email":"pagosgreencolombia@gmail.com"}
+[21-Nov-2025 20:17:18 UTC] Error General en verify-otp.php: Faltan datos para la verificación. - Datos recibidos: {"otp_plugin_id":"3","otp_plugin_slug":"plugin-whatsapp-wordpress-woowapp","otp_code":"368523","user_name":"Andres","email":"pagosgreencolombia@gmail.com","opt_in":"1"}
+[21-Nov-2025 20:18:16 UTC] Error de Base de Datos en verify-otp.php: Duplicate entry 'pagosgreencolombia@gmail.com' for key 'email' - Datos recibidos: {"otp_plugin_id":"3","otp_plugin_slug":"plugin-whatsapp-wordpress-woowapp","otp_code":"910487","user_name":"Juli\u00e1n \u00c1vila","email":"pagosgreencolombia@gmail.com","opt_in":"1"}

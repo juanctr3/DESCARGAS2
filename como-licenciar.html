@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación: Actualizaciones Automáticas de Plugins</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { padding: 2rem; }
+        .code-block {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: .25rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            font-family: monospace;
+            white-space: pre-wrap; /* Para que el código no se salga del contenedor */
+            word-break: break-all;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            font-weight: bold;
+            padding: 0.1rem 0.3rem;
+            border-radius: 0.2rem;
+        }
+        h2 { margin-top: 2rem; border-bottom: 1px solid #dee2e6; padding-bottom: 0.5rem;}
+        h3 { margin-top: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4">Documentación: Implementación de Actualizaciones Automáticas de Plugins</h1>
+        <p class="lead">Esta guía explica cómo integrar tus plugins de WordPress con el sistema de actualizaciones alojado en <code>https://descargas.smsenlinea.com</code>.</p>
+
+        <hr>
+
+        <h2>1. Concepto General</h2>
+        <p>WordPress busca periódicamente actualizaciones para los plugins instalados. Añadiremos un código a tu plugin que le indicará a WordPress que debe consultar nuestra API personalizada (<code>https://descargas.smsenlinea.com/api/update.php</code>) para buscar nuevas versiones. La API verificará si hay una versión más reciente y si la licencia del usuario (si aplica) es válida, y responderá a WordPress para que muestre (o no) el aviso de actualización en el panel de administración.</p>
+
+        <hr>
+
+        <h2>2. Preparación del Lado del Servidor</h2>
+        <p>Asegúrate de que la base de datos y la API en <code>descargas.smsenlinea.com</code> estén correctamente configuradas.</p>
+
+        <h3>2.1. Requisitos en la Base de Datos (Tabla <code>plugins</code>)</h3>
+        <p>Cada plugin debe tener la siguiente información correctamente configurada en la tabla <code>plugins</code>:</p>
+        <ul>
+            <li><strong><code>version</code></strong>: La versión más reciente disponible (ej: "1.6.0").</li>
+            <li><strong><code>update_identifier</code></strong>: Un identificador <strong>único</strong> para este plugin (se recomienda usar el mismo valor que el <code>slug</code>). Este valor se usará en el código del plugin.</li>
+            <li><strong><code>requires_license</code></strong>: <code>1</code> si el plugin necesita una licencia válida para actualizarse, <code>0</code> si no.</li>
+            <li><strong><code>changelog</code></strong>: Texto (puede ser HTML simple como <code>&lt;p&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>) describiendo los cambios de la última versión. Se mostrará en los detalles de la actualización.</li>
+            <li><strong><code>author</code></strong>: Nombre del autor del plugin (ej: "SmsEnLinea").</li>
+            <li><strong><code>requires</code></strong>: Versión mínima de WordPress requerida (ej: "5.0").</li>
+            <li><strong><code>tested</code></strong>: Versión de WordPress hasta la cual ha sido probado (ej: "6.4").</li>
+            <li><strong><code>file_path</code></strong>: La ruta <em>relativa</em> dentro de la carpeta <code>uploads/files/</code> al archivo <code>.zip</code> de la versión más reciente (ej: <code>plugin-68c5e75bb1ada3.23353911-wc-smsenlinea-notifier-1.5.0.zip</code>).</li>
+        </ul>
+        <p>Si faltan estas columnas, usa el siguiente código SQL en phpMyAdmin (pestaña SQL):</p>
+        <div class="code-block">
+            ALTER TABLE `plugins`
+            ADD COLUMN `update_identifier` VARCHAR(100) NULL DEFAULT NULL UNIQUE AFTER `status`,
+            ADD COLUMN `requires_license` TINYINT(1) NOT NULL DEFAULT 0 AFTER `update_identifier`,
+            ADD COLUMN `changelog` TEXT NULL DEFAULT NULL AFTER `requires_license`,
+            ADD COLUMN `author` VARCHAR(100) NULL DEFAULT NULL AFTER `changelog`,
+            ADD COLUMN `requires` VARCHAR(20) NULL DEFAULT NULL AFTER `author`,
+            ADD COLUMN `tested` VARCHAR(20) NULL DEFAULT NULL AFTER `requires`;
+        </div>
+
+        <h3>2.2. Endpoint de la API de Actualizaciones</h3>
+        <ul>
+            <li><strong>URL:</strong> <code>https://descargas.smsenlinea.com/api/update.php</code></li>
+            <li><strong>Método:</strong> <code>POST</code></li>
+            <li><strong>Parámetros Esperados (en el cuerpo POST):</strong>
+                <ul>
+                    <li><code>action</code>: Siempre será 'plugin_information'.</li>
+                    <li><code>update_identifier</code>: El identificador único del plugin (debe coincidir con la base de datos).</li>
+                    <li><code>version</code>: La versión actual instalada en el sitio del usuario.</li>
+                    <li><code>license_key</code>: (Opcional) La clave de licencia ingresada por el usuario.</li>
+                </ul>
+            </li>
+            <li><strong>Respuesta:</strong>
+                <ul>
+                    <li>Si hay actualización válida: Objeto JSON con los detalles (<code>slug</code>, <code>new_version</code>, <code>url</code>, <code>package</code>, <code>sections</code>, etc.).</li>
+                    <li>Si no hay actualización: Respuesta vacía.</li>
+                    <li>Si la licencia es inválida/expirada: Objeto JSON con <code>package</code> vacío y un mensaje en <code>sections->changelog</code> o <code>upgrade_notice</code>.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>El archivo <code>api/update.php</code> ya está configurado para manejar esto, siempre que la base de datos tenga las columnas correctas.</p>
+
+        <hr>
+
+        <h2>3. Código a Añadir Dentro de Cada Plugin de WordPress</h2>
+        <p>Este es el código PHP que debe añadirse al **archivo principal** de cada plugin.</p>
+
+        <h3>3.1. Localizar el Archivo Principal</h3>
+        <p>Busca el archivo PHP principal dentro de la carpeta del plugin. Generalmente tiene el mismo nombre que la carpeta y contiene comentarios como <code>/* Plugin Name: ... */</code> al principio.</p>
+
+        <h3>3.2. Añadir el Código</h3>
+        <p>Copia el siguiente bloque de código completo y pégalo al **final** del archivo principal del plugin, justo antes de la etiqueta de cierre <code>?></code> (si existe).</p>
+        <div class="code-block">
+&lt;?php
+// --- INICIO: CÓDIGO PARA ACTUALIZACIONES AUTOMÁTICAS ---
+
+// Define la URL de tu API de actualizaciones (NO CAMBIAR si la API está en esa URL)
+define('MI_PLUGIN_UPDATE_API_URL', 'https://descargas.smsenlinea.com/api/update.php');
+
+// =========================================================================
+// ==                     ¡¡¡ PERSONALIZAR AQUÍ !!!                       ==
+// =========================================================================
+
+// 1. Define el identificador único de ESTE plugin.
+//    Debe coincidir EXACTAMENTE con 'update_identifier' en la base de datos.
+define('MI_PLUGIN_UNIQUE_IDENTIFIER', '<span class="highlight">pon_aqui_el_identificador_unico</span>');
+
+// 2. Define la ruta relativa al archivo principal del plugin desde la carpeta 'plugins'.
+//    Ejemplo: 'mi-plugin-whatsapp/mi-plugin-whatsapp.php'
+define('MI_PLUGIN_FILE_PATH', '<span class="highlight">pon_aqui_la_ruta/al_archivo_principal.php</span>');
+
+// 3. Define el nombre de la opción donde se guarda la clave de licencia en WordPress.
+//    (SOLO si el plugin requiere licencia). Si no requiere, puedes dejarlo así.
+define('MI_PLUGIN_LICENSE_OPTION_NAME', '<span class="highlight">mi_plugin_opcion_licencia</span>');
+
+// =========================================================================
+// ==                  NO CAMBIAR NADA DEBAJO DE ESTA LÍNEA               ==
+// =========================================================================
+
+// (El resto del código PHP proporcionado en la respuesta anterior va aquí...)
+// (...) ¡Asegúrate de incluir las funciones mi_plugin_check_for_update y mi_plugin_api_details completas! (...)
+
+// --- FIN: CÓDIGO PARA ACTUALIZACIONES AUTOMÁTICAS ---
+?&gt;
+        </div>
+        <p><strong class="text-danger">Importante:</strong> Reemplaza el bloque <code>(...)</code> de arriba con las funciones completas `mi_plugin_check_for_update` y `mi_plugin_api_details` que te proporcioné anteriormente.</p>
+
+
+        <h3>3.3. Personalización Obligatoria</h3>
+        <p>Dentro del código que pegaste, debes modificar **obligatoriamente** las siguientes líneas marcadas con <span class="highlight">resaltado</span>:</p>
+        <ol>
+            <li>
+                <strong><code>define('MI_PLUGIN_UNIQUE_IDENTIFIER', '...');</code></strong><br>
+                Reemplaza <code>'pon_aqui_el_identificador_unico'</code> por el valor <strong>exacto</strong> que está en la columna <code>update_identifier</code> de la base de datos para <em>este plugin específico</em>. (Ejemplo: <code>'plugin-whatsapp-wordpress-woocoomerce-gratis'</code>).
+            </li>
+            <li>
+                <strong><code>define('MI_PLUGIN_FILE_PATH', '...');</code></strong><br>
+                Reemplaza <code>'pon_aqui_la_ruta/al_archivo_principal.php'</code> por la ruta correcta desde <code>wp-content/plugins/</code> hasta el archivo principal.
+                <ul>
+                    <li>Ejemplo 1: Si el archivo es <code>wp-content/plugins/mi-plugin/mi-plugin.php</code>, usa <code>'mi-plugin/mi-plugin.php'</code>.</li>
+                    <li>Ejemplo 2: Si el archivo es <code>wp-content/plugins/mi-plugin.php</code>, usa <code>'mi-plugin.php'</code>.</li>
+                </ul>
+            </li>
+            <li>
+                <strong><code>define('MI_PLUGIN_LICENSE_OPTION_NAME', '...');</code></strong><br>
+                (Solo si <code>requires_license</code> es <code>1</code> en la base de datos). Reemplaza <code>'mi_plugin_opcion_licencia'</code> por el nombre real de la opción que usa tu plugin para guardar la clave de licencia en la base de datos de WordPress (usando <code>get_option()</code> y <code>update_option()</code>). Si el plugin no maneja licencias, puedes ignorar esta línea o dejarla como está (el código enviará una clave vacía).
+            </li>
+        </ol>
+
+        <h3>3.4. Guardar y Comprimir</h3>
+        <ol>
+            <li>Guarda los cambios en el archivo PHP principal del plugin.</li>
+            <li>Vuelve a comprimir todos los archivos del plugin en un nuevo archivo <code>.zip</code>. Asegúrate de que los archivos queden en la raíz del <code>.zip</code>.</li>
+        </ol>
+
+        <hr>
+
+        <h2>4. Subir la Nueva Versión del Plugin al Servidor</h2>
+        <ol>
+            <li>Ve al panel de administración de <code>descargas.smsenlinea.com</code>.</li>
+            <li>Edita el plugin correspondiente.</li>
+            <li>Sube el nuevo archivo <code>.zip</code> (el que contiene el código de actualización).</li>
+            <li><strong>¡Muy Importante!</strong> Actualiza el número de <strong><code>version</code></strong> en la base de datos para que sea mayor que la versión anterior (ej: "1.5.0" -> "1.5.1").</li>
+            <li>Actualiza el campo <strong><code>changelog</code></strong> en la base de datos con los cambios de esta nueva versión.</li>
+            <li>Guarda los cambios en el panel de administración.</li>
+        </ol>
+
+        <hr>
+
+        <h2>5. Manejo de Claves de Licencia (Si Aplica)</h2>
+        <p>Si un plugin tiene <code>requires_license = 1</code>:</p>
+        <ul>
+            <li>El plugin **debe** ofrecer una página de configuración en el admin de WordPress donde el usuario pueda ingresar y guardar su clave de licencia.</li>
+            <li>Utiliza <code>update_option('nombre_opcion', $clave_ingresada);</code> para guardar la clave.</li>
+            <li>El <code>'nombre_opcion'</code> debe coincidir exactamente con lo definido en <code>MI_PLUGIN_LICENSE_OPTION_NAME</code>.</li>
+            <li>El código de actualización usará <code>get_option('nombre_opcion', '');</code> para recuperar y enviar la clave a la API.</li>
+        </ul>
+
+        <hr>
+
+        <h2>6. Pruebas</h2>
+        <ol>
+            <li>En un sitio de WordPress de <strong>prueba</strong>, instala una versión <strong>anterior</strong> del plugin (sin el código de actualización).</li>
+            <li>Activa el plugin.</li>
+            <li>(Si usa licencia) Guarda una clave de licencia válida en su configuración.</li>
+            <li>Ahora, <strong>actualiza manualmente</strong> el plugin subiendo la versión <strong>nueva</strong> (con el código de actualización incluido) a través de "Plugins" -> "Añadir nuevo" -> "Subir plugin". Reemplaza la versión anterior.</li>
+            <li>Ve a "Escritorio" -> "Actualizaciones" y haz clic en "Comprobar de nuevo". Espera un momento. El plugin <em>no</em> debería aparecer como actualizable.</li>
+            <li><strong>Simula una futura actualización:</strong> En <code>descargas.smsenlinea.com</code>, edita el plugin en la base de datos: incrementa el número de <code>version</code> (ej: "1.5.1" -> "1.5.2") y actualiza el <code>changelog</code>.</li>
+            <li>Vuelve al sitio de WordPress de prueba, ve a "Escritorio" -> "Actualizaciones" y haz clic en "Comprobar de nuevo".</li>
+            <li>¡Ahora el plugin **debería aparecer** en la lista de actualizaciones! Verifica la versión y el changelog.</li>
+            <li>Haz clic en "Actualizar ahora" y confirma que se instale correctamente.</li>
+        </ol>
+
+        <hr>
+        <p class="text-muted small">Fin de la documentación.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
